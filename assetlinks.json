@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "dev.probity.reshimgathi",
+            "sha256_cert_fingerprints": [
+                "CE:99:9F:66:7A:93:96:C7:B2:FD:35:1B:AC:81:87:AA:9E:F0:DE:EA:A8:4D:CB:68:DC:0A:6A:41:9C:1F:54:17"
+            ]
+        }
+    }
+]
