@@ -5,7 +5,7 @@
             {
                 "appID": "3KHHUZ24M9.dev.probity.reshimgathi",
                 "paths": [
-                    "/profile/*",
+                    "home/profile/*",
                     "/"
                 ]
             }
