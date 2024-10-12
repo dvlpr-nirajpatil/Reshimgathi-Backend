@@ -2,6 +2,7 @@
 const express = require('express');
 const useragent = require('express-useragent');
 const path = require('path');
+const fs = require('fs');
 
 // Create an Express application
 const app = express();
@@ -56,6 +57,17 @@ app.get('/profile/:id', (req, res) => {
     res.send(`Welcome to profile ${profileId}! Please visit the store links on your mobile device.`);
   });
   
+
+  app.get('/apple-app-site-association', (req, res) => {
+    const filePath = path.join(__dirname, 'apple-app-site-association');
+  
+    // Set the Content-Type header to application/json
+    res.setHeader('Content-Type', 'application/json');
+  
+    // Stream the file to the client
+    const stream = fs.createReadStream(filePath);
+    stream.pipe(res);
+  });
   
 
 // Define the port number
