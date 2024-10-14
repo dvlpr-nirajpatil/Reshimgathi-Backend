@@ -7,7 +7,7 @@
                 "paths": [
                     "/",
                     "/home",
-                    "home/profile/*"
+                    "/home/profile/*"
                 ]
             }
         ]
