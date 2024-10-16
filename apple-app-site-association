@@ -4,11 +4,7 @@
         "details": [
             {
                 "appID": "3KHHUZ24M9.dev.probity.reshimgathi",
-                "paths": [
-                    "/",
-                    "/home",
-                    "/home/profile/*"
-                ]
+                "paths": []
             }
         ]
     }
