@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
 
 
 
-app.get('home/profile/:id', (req, res) => {
+app.get('/home/profile/:id', (req, res) => {
     const source = req.useragent;
     const profileId = req.params.id;
     
