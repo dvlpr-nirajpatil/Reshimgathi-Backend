@@ -60,6 +60,9 @@ app.get('/.well-known/assetlinks.json', (req, res) => {
 
 
 app.get('/apple-app-site-association', (req, res) => {
+
+    console.log("Requested Apple Certificate");
+
     const filePath = path.join(__dirname, 'apple-app-site-association');
   
     // Set the Content-Type header to application/json
