@@ -74,6 +74,21 @@ app.get('/apple-app-site-association', (req, res) => {
   });
   
 
+app.get('/.well-known/apple-app-site-association', (req, res) => {
+
+    console.log("Requested Apple Certificate");
+
+    const filePath = path.join(__dirname, 'apple-app-site-association');
+  
+    // Set the Content-Type header to application/json
+    res.setHeader('Content-Type', 'application/json');
+  
+    // Stream the file to the client
+    const stream = fs.createReadStream(filePath);
+    stream.pipe(res);
+  });
+  
+
 // Define the port number
 const PORT = 3000;
 
